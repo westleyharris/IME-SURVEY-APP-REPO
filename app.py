@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect, url_for, render_template, flash
+from flask import Flask, send_from_directory
 import base64
 import requests
 import io
@@ -58,7 +58,7 @@ def process_image_with_gpt4o(image_path):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return send_from_directory('.', 'index.html')
 
 @app.route('/submit_motor_info', methods=['POST'])
 def submit_motor_info():
