@@ -4,6 +4,5 @@ pytesseract
 Pillow
 Flask==2.1.2
 openai==0.27.0
-google-cloud-vision==3.0.2
 openpyxl==3.0.9
 requests==2.26.0
